@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奥特曼大战怪兽</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="start-screen" class="screen">
+            <h1>奥特曼大战怪兽</h1>
+            <button id="start-button">开始游戏</button>
+        </div>
+        <div id="character-select-screen" class="screen hidden">
+            <h2>选择角色</h2>
+            <div class="character-selection">
+                <div>
+                    <h3>奥特曼</h3>
+                    <div id="ultraman-list" class="character-list"></div>
+                </div>
+                <div>
+                    <h3>怪兽</h3>
+                    <div id="monster-list" class="character-list"></div>
+                </div>
+            </div>
+            <button id="battle-button" disabled>开始战斗</button>
+        </div>
+        <div id="battle-screen" class="screen hidden">
+            <div id="battle-stats">
+                <div id="ultraman-stats" class="character-stats"></div>
+                <div id="monster-stats" class="character-stats"></div>
+            </div>
+            <div id="battle-area"></div>
+            <div id="action-buttons"></div>
+        </div>
+        <div id="end-screen" class="screen hidden">
+            <h2 id="result"></h2>
+            <button id="replay-button">再玩一次</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
